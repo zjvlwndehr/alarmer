@@ -29,7 +29,7 @@
 
             if(d.getMinutes() >= 00 && d.getMinutes() <= 50){
               document.write('지금은 '+(d.getHours()-8) + '교시이고,<br>{ ' + schedule[d.getDay()-1][d.getHours()-9] + ' }과목입니다.<br>');
-            }elseif(d.getMinutes() >= 30 && d.getMinutes() <= 59) {
+            }else{
               // document.write('지금은 쉬는시간입니다.<br>다음 과목 : { ' + schedule[0][(d.getHours()-8)] + ' }을 준비해주세요 .');
               document.write('지금은 쉬는시간입니다.<br>다음 과목 : { ' + schedule[d.getDay()-1][d.getHours()-8] + ' }을 준비해주세요 .');
             }
